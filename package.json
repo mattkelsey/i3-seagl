@@ -1,7 +1,9 @@
 {
   "name": "presentation-i3",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "bespoke-theme-nebula": "^1.0.1"
+  },
   "devDependencies": {
     "bespoke": "^1.0.0",
     "bespoke-backdrop": "^1.0.0",
