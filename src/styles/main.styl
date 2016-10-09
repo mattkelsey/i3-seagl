@@ -10,3 +10,16 @@
 h1, h2
     letter-spacing: normal
     text-transform: none
+.avatar
+  width: 120px
+  height: @width
+  border-radius: 100%
+  margin: .5em 0
+.backdrop
+  &--orion
+    background-image: url('../images/matt.jpg')
+    background-position: 0 0
+    &.bespoke-backdrop-active
+      opacity: 0.4
+    &.bespoke-backdrop-before
+      transition-delay: 2s
