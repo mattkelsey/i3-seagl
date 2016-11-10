@@ -53,7 +53,87 @@ html
           span.minutes
           span.dots :
           span.seconds
-      
+      section      
+        h1 AESTHETICS
+        
+      section
+        h2 Colors
+        h3.bullet Anything in i3 can have a user-specified color
+        h3.bullet Is specified with a hex-value (sometimes opacity values too)
+        
+      section
+        h2 i3 Window Color Declarations
+        <img src="images/windowDeclarationsColors.png" style="width:100%;height:auto;">
+        
+      section
+        h2 i3 Bar Color Declarations
+        <img src="images/barDeclarationsColors.png" style="width:100%;height:auto;">
+       
+      section
+        h2 Setting the Background
+        h3.bullet Two different methods
+        
+      section
+        h2 Option 1: feh
+        h3.bullet Install feh 
+        h3.bullet Add one line to end of i3 configuration file
+        h3.bullet <img src="images/feh.png" style="width:100%;height:auto;">
+        
+      section 
+        h2 Option 2: xsetroot
+        h3.bullet Preferred by some over feh
+        h3.bullet Capability of setting background as solid color
+        h3.bullet INSERT IMAGE SHOWING THIS
+        
+      section
+        h2 i3-gaps
+        h3.bullet Popular fork of i3
+        h3.bullet Provides gap configuration in windows
+        
+      section
+        h2 How to Install i3-gaps
+        h3.bullet Debian/Ubuntu/Other: Install from source
+        h3.bullet Arch: Install from AUR under <code>i3-gaps</code> package
+        h3.bullet Reference for all <a href="https://github.com/Airblader/i3/wiki/Compiling-&-Installing">here</a>
+        h3.bullet NOTE: It will install over an existing i3 install perfectly fine
+        
+      section
+        h2 How to Use i3-gaps
+        h3.bullet Use it just like normal i3 except...
+        h3.bullet WITH GAPS!
+        h3.bullet Gaps declared with pixel count on inner and outer spacings between windows/edge of screen
+        h3.bullet INSERT IMAGE SHOWING THIS (ON ANOTHER SLIDE?)
+        
+      section
+        h2 Pro Tips for i3-gaps
+        h3.bullet Generally windows look better without a border or title bar in i3-gaps
+        h3.bullet Set this with <code>for_window [class="^.*"] border pixel 0</code>
+        
+      section
+        h2 Pro Tips for i3-gaps/general i3 (continued)
+        h3.bullet Refreshing the layout of i3 is <b>very useful</b>
+        h3.bullet Do so after changing config with <code>$mod+Shift+r</code> or other set keybind
+        
+      section
+        h2 Application Launchers
+        h3.bullet Two main common launchers
+        h3.bullet Dmenu (default suggestion)
+        h3.bullet Rofi
+        
+      section
+        h2 Dmenu
+        h3.bullet All colors can be changed in dmenu as well
+        h3.bullet Limited visual configuration
+        h3.bullet Default application to be started with <code>$mod+d</code>
+        h3.bullet INSERT IMAGE OF DMENU
+       
+      section
+        h2 Rofi
+        h3.bullet Challenging to install and configure
+        h3.bullet Very customizable visually
+        h3.bullet Simple to integrate with i3 (same as dmenu)
+        h3.bullet INSERT IMAGE OF ROFI
+
       section
         h2 Responsive Slides
         h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
