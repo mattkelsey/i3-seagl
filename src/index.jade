@@ -48,9 +48,14 @@ html
       
       section
         h2.bullet What i3 is...
+        h3.bullet Window manager
+        h3.bullet Simple status
+        h3.bullet Simple application launching
+        h3.bullet Powerful tiling
       section
-        h2.bullet What i3 isn't...
-        h3.bullet A desktop environment
+        h2.bullet What i3 is not...
+        h3.bullet Desktop environment
+        h4.bullet display manager, utility applications, etc
         
       section
         h2.single-words.big-space FIVE MINUTE INSTALL
@@ -59,7 +64,12 @@ html
           span.minutes
           span.dots :
           span.seconds
-     
+      section
+        h2 Well this is embarrassing...
+        code.language-none sudo apt-get install x-window-system
+        code.language-none sudo apt-get install i3
+        code.language-none echo "exec i3" >> ~/.xinitrc
+        code.language-none startx
       section
         h1 FUNCTIONALITY
       section
