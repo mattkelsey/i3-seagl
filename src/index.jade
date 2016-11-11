@@ -121,14 +121,16 @@ html
         h2.bullet Option 1: feh
         h3.bullet Install feh 
         h3.bullet Add one line to end of i3 configuration file
-        img.bullet(src="images/feh.png" width="100%")
+        code.bullet.language-none.
+          exec --no-startup-id feh --bg-scale ~/Pictures/cloudsAF1080.jpg
         
       section 
         h2.bullet Option 2: xsetroot
         h3.bullet Preferred by some over feh
         h3.bullet Lighter install (xsetroot only does one thing)
-        h3.bullet Capability of setting background as solid color or image
-        h3.bullet INSERT IMAGE SHOWING THIS
+        h3.bullet Capability of setting background as solid color
+        code.bullet.language-none.
+          exec --no-startup-id xsetroot -solid "#333333"
         
       section
         h2.bullet i3-gaps
@@ -147,8 +149,12 @@ html
         h3.bullet Use it just like normal i3 except...
         h3.bullet WITH GAPS!
         h3.bullet Gaps declared with pixel count on inner and outer spacings between windows/edge of screen
-        h3.bullet INSERT IMAGE SHOWING THIS (ON ANOTHER SLIDE?)
-        
+      
+      section
+        img(src="images/nogaps.png" height="100%")
+      section
+        img(src="images/gaps.png" height="100%")
+      
       section
         h2.bullet Pro Tips for i3-gaps
         h3.bullet Generally windows look better without a border or title bar in i3-gaps
@@ -177,7 +183,17 @@ html
         h3.bullet Challenging to install and configure
         h3.bullet Very customizable visually
         h3.bullet Simple to integrate with i3 (same as dmenu)
-        h3.bullet INSERT IMAGE OF ROFI
-
+      section  
+        img(src="images/rofitest.gif" height="100%")
+        
+      section
+        h2 And that's just the beginning...
+      
+      section
+        h2 Resources
+        h3 Slides (slides.matthewkelsey.com and [JESSE URL])
+        h3 i3 Docs (<a href="https://i3wm.org/docs">i3wm.org/docs</a>)
+        h3 Contact Us... (mattkelseymk@gmail.com and jessephilipwalling@gmail.com)
+        h3 Or on XMPP... (matt@matthewkelsey.com and jesse@strugee.net)
         
     script(src='build/build.js')
