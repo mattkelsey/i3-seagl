@@ -23,8 +23,8 @@
       </section>
       <section><img src="images/jesse.jpg" class="avatar">
         <h2>I'm Jesse!</h2>
-        <h4>Sysadmin - Artist</h4>
-        <h6>@jpwall</h6>
+        <h4>Sysadmin - Artist - Designer</h4>
+        <h6>@jpwall (mostly)</h6>
       </section>
       <section><img src="images/arch.png" height="70%" width="auto"></section>
       <section data-bespoke-backdrop="backdrop backdrop--history">
@@ -90,7 +90,9 @@
       <section>
         <h2 class="bullet">Colors</h2>
         <h3 class="bullet">Anything in i3 can have a user-specified color</h3>
-        <h3 class="bullet">Is specified with a hex-value (sometimes opacity values too)</h3>
+        <h3 class="bullet">Specified with RGBa values</h3>
+        <h4 class="bullet">All 16.8+ million of them</h4>
+        <h3 class="bullet">Daunting, I know... But it is somewhat less intimidating than that</h3>
       </section>
       <section>
         <h2 class="bullet">i3 Window Color Declarations</h2><img src="images/windowDeclarationsColors.png" width="100%" class="bullet">
@@ -99,53 +101,56 @@
         <h2 class="bullet">i3 Bar Color Declarations</h2><img src="images/barDeclarationsColors.png" width="100%" class="bullet">
       </section>
       <section>
-        <h2 class="bullet">Setting the Background</h2>
+        <h2 class="bullet">Setting the Background, a Simple and Complicated  Task</h2>
         <h3 class="bullet">Two different methods</h3>
+        <h5 class="bullet">Feh / xsetroot</h5>
       </section>
       <section>
         <h2 class="bullet">Option 1: feh</h2>
-        <h3 class="bullet">Install feh </h3>
-        <h3 class="bullet">Add one line to end of i3 configuration file</h3><code class="bullet language-none">
-          exec --no-startup-id feh --bg-scale ~/Pictures/cloudsAF1080.jpg
-          </code>
+        <h3 class="bullet">General program to view images</h3>
+        <h3 class="bullet">Very capable for background manipulation with i3</h3>
+        <h3 class="bullet">Not as lightweight as xsetroot..</h3>
+        <h3 class="bullet">In most distributions, listed under package 'feh'</h3>
+        <h3 class="bullet">Then just add one line to end of i3 configuration file!</h3><code class="bullet language-java">exec --no-startup-id feh --bg-scale ~/Pictures/BACKGROUND.jpg</code>
       </section>
       <section>
         <h2 class="bullet">Option 2: xsetroot</h2>
         <h3 class="bullet">Preferred by some over feh</h3>
         <h3 class="bullet">Lighter install (xsetroot only does one thing)</h3>
-        <h3 class="bullet">Capability of setting background as solid color</h3><code class="bullet language-none">
-          exec --no-startup-id xsetroot -solid "#333333"
-          </code>
+        <h3 class="bullet">Comes with x most of the time (xorg-xsetroot in Arch)</h3>
+        <h3 class="bullet">Capable of setting background as solid color</h3><code class="bullet language-java">exec --no-startup-id xsetroot -solid "#AAAAAA"</code>
       </section>
       <section>
         <h2 class="bullet">i3-gaps</h2>
         <h3 class="bullet">Popular fork of i3</h3>
-        <h3 class="bullet">Provides gap configuration in windows</h3>
-      </section>
-      <section>
-        <h2 class="bullet">How to Install i3-gaps</h2>
-        <h3 class="bullet">Debian/Ubuntu/Other: Install from source</h3>
-        <h3 class="bullet">Arch: Install from AUR under <code class="language-none">i3-gaps</code> package</h3>
-        <h3 class="bullet">Reference for all <a href="https://github.com/Airblader/i3/wiki/Compiling-&-Installing">here</a></h3>
-        <h3 class="bullet">NOTE: It will install over an existing i3 install perfectly fine</h3>
+        <h3 class="bullet">Provides gap configuration between windows</h3>
       </section>
       <section>
         <h2 class="bullet">How to Use i3-gaps</h2>
         <h3 class="bullet">Use it just like normal i3 except...</h3>
-        <h3 class="bullet">WITH GAPS!</h3>
+        <h3 class="bullet">WITH GAPS!!!</h3>
         <h3 class="bullet">Gaps declared with pixel count on inner and outer spacings between windows/edge of screen</h3>
+      </section>
+      <section>
+        <h2 class="bullet">OK Sure, but why do I care?</h2>
+        <h3 class="bullet">Just, just look for a sec...</h3>
       </section>
       <section><img src="images/nogaps.png" height="100%"></section>
       <section><img src="images/gaps.png" height="100%"></section>
       <section>
-        <h2 class="bullet">Pro Tips for i3-gaps</h2>
-        <h3 class="bullet">Generally windows look better without a border or title bar in i3-gaps</h3>
-        <h3 class="bullet">Set this with <code class="language-none">for_window [class="^.*"] border pixel 0</code></h3>
+        <h2 class="bullet">How to Install i3-gaps</h2>
+        <h3 class="bullet">Debian/Ubuntu/Other: Install from source</h3>
+        <h3 class="bullet">Arch: Install from AUR under package <code class="language-java">i3-gaps </code></h3>
+        <h3 class="bullet">Reference for all <a href="https://github.com/Airblader/i3/wiki/Compiling-&-Installing">here</a></h3>
+        <h3 class="bullet">NOTE: It will install over an existing i3 install perfectly fine</h3>
       </section>
       <section>
-        <h2 class="bullet">Pro Tips for i3-gaps/general i3 (continued)</h2>
+        <h2 class="bullet">Pro Tips for i3-gaps</h2>
+        <h3 class="bullet">Generally windows look better without a border or title bar in i3-gaps</h3>
+        <h3 class="bullet">Set this with <code class="language-java">for_window [class="^.*"] border pixel 0</code></h3>
         <h3 class="bullet">Refreshing the layout of i3 is <b>very useful</b></h3>
-        <h3 class="bullet">Do so after changing config with <code class="language-none">$mod+Shift+r</code> or other set keybind</h3>
+        <h3 class="bullet">Do so after changing config with <code class="language-java">$mod+Shift+r</code></h3>
+        <h3 class="bullet">(or your own respective keybind of course)</h3>
       </section>
       <section>
         <h2 class="bullet">Application Launchers</h2>
@@ -155,10 +160,9 @@
       </section>
       <section>
         <h2 class="bullet">Dmenu</h2>
-        <h3 class="bullet">All colors can be changed in dmenu as well</h3>
+        <h3 class="bullet">All colors can be changed in dmenu like i3</h3>
         <h3 class="bullet">Limited visual configuration</h3>
         <h3 class="bullet">Default application to be started with <code class="language-none">$mod+d</code></h3>
-        <h3 class="bullet">INSERT IMAGE OF DMENU</h3>
       </section>
       <section>
         <h2 class="bullet">Rofi</h2>
